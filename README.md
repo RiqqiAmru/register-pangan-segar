@@ -21,3 +21,4 @@ Register Pangan Segar Merupakan laman website yang dibuat untuk memudahkan masya
 -   [Javascript](https://www.w3schools.com/js/)
 -   [Tailwind CSS](https://tailwindcss.com/)
 -   [Astro](https://astro.build/)
+-   template landing from [Tailus](https://astrolus.netlify.app/)
