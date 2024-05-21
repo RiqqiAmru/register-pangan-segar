@@ -3,7 +3,7 @@ import Container from "./Container.astro";
 
 ---
 
-<div id="solution">
+<div id="oss">
     <Container>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-sky-500">
         <path fill-rule="evenodd" d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z" clip-rule="evenodd" />
@@ -12,44 +12,79 @@ import Container from "./Container.astro";
       
       <div class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
         <div class="md:5/12 lg:w-1/2">
-          <img
-            src="./images/pie.svg"
+          <a href="https://oss.go.id/" target="_blank" rel="noopener noreferrer">
+            <img
+            src="./images/clients/oss.svg"
             alt="image"
             loading="lazy"
             width=""
             height=""
             class="w-full"
-          />
-        </div>
+            />
+          </a>
+          <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+            <a
+              href="#"
+              class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+            >
+              <span class="relative text-base font-semibold text-white"
+                >Dapatkan Bantuan</span
+              >
+            </a>
+            <a
+              href="https://ui-login.oss.go.id/register"
+              target="_blank"
+              class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+            >
+              <span
+                class="relative text-base font-semibold text-primary dark:text-white"
+                >Daftar Mandiri</span
+              >
+            </a>
+          </div>
+          </div>
         <div class="md:7/12 lg:w-1/2">
           <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-            Nuxt development is carried out by passionate developers
+            Apa itu OSS?
           </h2>
           <p class="my-8 text-gray-600 dark:text-gray-300">
-            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia. <br> <br> Vitae error, quaerat officia delectus voluptatibus explicabo quo pariatur impedit, at reprehenderit aliquam a ipsum quas voluptatem. Quo pariatur asperiores eum amet.
+            OSS (Online Single Submission) adalah sistem perizinan berusaha terintegrasi secara elektronik yang dikelola oleh pemerintah. Melalui OSS, proses pengajuan ijin usaha menjadi lebih mudah, cepat, dan transparan. Berikut beberapa fitur utama OSS:
           </p>
           <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
             <div class="mt-8 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
-                  <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clip-rule="evenodd" />
-                </svg>        
+                <svg viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 m-auto text-indigo-500 dark:text-indigo-400" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4.56499 12.4068C4.29258 12.0947 3.81879 12.0626 3.50676 12.335C3.19472 12.6074 3.1626 13.0812 3.43501 13.3932L4.56499 12.4068ZM7.14286 16.5L6.57787 16.9932C6.7203 17.1564 6.92629 17.25 7.14286 17.25C7.35942 17.25 7.56542 17.1564 7.70784 16.9932L7.14286 16.5ZM15.565 7.99324C15.8374 7.68121 15.8053 7.20742 15.4932 6.93501C15.1812 6.6626 14.7074 6.69472 14.435 7.00676L15.565 7.99324ZM10.5064 11.5068C10.234 11.8188 10.2662 12.2926 10.5782 12.565C10.8902 12.8374 11.364 12.8053 11.6364 12.4932L10.5064 11.5068ZM9.67213 14.7432C9.94454 14.4312 9.91242 13.9574 9.60039 13.685C9.28835 13.4126 8.81457 13.4447 8.54215 13.7568L9.67213 14.7432ZM3.43501 13.3932L6.57787 16.9932L7.70784 16.0068L4.56499 12.4068L3.43501 13.3932ZM7.70784 16.9932L9.67213 14.7432L8.54215 13.7568L6.57787 16.0068L7.70784 16.9932ZM11.6364 12.4932L13.6007 10.2432L12.4707 9.25676L10.5064 11.5068L11.6364 12.4932ZM13.6007 10.2432L15.565 7.99324L14.435 7.00676L12.4707 9.25676L13.6007 10.2432Z" fill="#1C274C"></path> <path d="M20.0002 7.5625L15.7144 12.0625M11.0002 16L11.4286 16.5625L13.5715 14.3125" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>      
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Pendaftaran Mudah</h3>
+                <p class="text-gray-500 dark:text-gray-400">Sistem yang user-friendly memudahkan pengusaha untuk mendaftarkan usahanya.</p>
+              </div> 
+            </div> 
+            <div class="pt-4 flex gap-4 md:items-center">
+              <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                <svg fill="currentColor" class="w-8 h-8 m-auto text-indigo-500 dark:text-indigo-400"  viewBox="0 -0.08 20 20" data-name="Capa 1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M10.37,3.37v-.7A.38.38,0,0,0,10,2.29h0a.38.38,0,0,0-.37.37v.71a7.11,7.11,0,1,0,.75,0ZM10,16.8a6.35,6.35,0,1,1,6.35-6.35A6.36,6.36,0,0,1,10,16.8Z"></path><path d="M15.22,10.26a.31.31,0,0,0-.31.31.31.31,0,1,0,.62,0A.31.31,0,0,0,15.22,10.26Z"></path><path d="M4.78,10.26a.31.31,0,0,0-.31.31.31.31,0,1,0,.62,0A.31.31,0,0,0,4.78,10.26Z"></path><circle cx="10" cy="15.62" r="0.31"></circle><path d="M10,5.49a.31.31,0,1,0-.31-.31A.31.31,0,0,0,10,5.49Z"></path><path d="M4.93,4.55a.42.42,0,0,0,.21-.06l1.56-1A.38.38,0,0,0,6.81,3a.37.37,0,0,0-.52-.11l-1.56,1a.38.38,0,0,0-.11.52A.37.37,0,0,0,4.93,4.55Z"></path><path d="M13.2,3.48l1.56,1a.42.42,0,0,0,.21.06.38.38,0,0,0,.2-.69l-1.56-1a.37.37,0,0,0-.52.11A.38.38,0,0,0,13.2,3.48Z"></path><path d="M9.4,11.42H8.54a6.37,6.37,0,0,0,1.19-1.36,1,1,0,0,0-.2-1A1.22,1.22,0,0,0,8.3,8.68a1.71,1.71,0,0,0-1,.85.38.38,0,0,0,.17.5A.39.39,0,0,0,8,9.86.94.94,0,0,1,8.5,9.4.46.46,0,0,1,9,9.54.24.24,0,0,1,9,9.78a13.67,13.67,0,0,1-1.7,1.74.37.37,0,0,0,.25.65H9.4a.37.37,0,0,0,.37-.37A.38.38,0,0,0,9.4,11.42Z"></path><path d="M12.74,9.68a.39.39,0,0,0-.53,0l-.66.66-.66-.66a.39.39,0,0,0-.53,0,.37.37,0,0,0,0,.53l.66.66-.66.66a.37.37,0,0,0,0,.53.34.34,0,0,0,.26.11.36.36,0,0,0,.27-.11l.66-.66.66.66a.34.34,0,0,0,.26.11.36.36,0,0,0,.27-.11.39.39,0,0,0,0-.53l-.66-.66.66-.66A.39.39,0,0,0,12.74,9.68Z"></path></g></svg>      
+              </div>
+              <div class="w-5/6">
+                <h3 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Efisiensi Waktu</h3>
+                <p class="text-gray-500 dark:text-gray-400">Memangkas birokrasi yang rumit sehingga proses perizinan lebih cepat.</p>
               </div> 
             </div> 
             <div class="pt-4 flex gap-4 md:items-center">
               <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">  
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
-                  <path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
-                </svg>                                      
+                <svg fill="currentColor" class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400" viewBox="0 0 52 52" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2.2359999999999998"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M44.5,21a5.5,5.5,0,1,1-4.9,8h-.91c-5.39.06-7.29,1.7-10.31,7.34l-.17.33-.2.38c-1.8,3.37-2.82,4.9-4.66,6.52C20.76,45.84,17.42,47,13,47h-.6a5.5,5.5,0,1,1,0-5h.91c5.49-.06,7.36-1.76,10.48-7.67h0L24,34a27.18,27.18,0,0,1,3.11-5H12.4a5.5,5.5,0,1,1,0-5H39.6a5.53,5.53,0,0,1,4.68-3Zm0-19a5.5,5.5,0,1,1-4.9,8H12.4a5.5,5.5,0,1,1,0-5H39.6A5.5,5.5,0,0,1,44.5,2Z"></path></g></svg>                                    
               </div>
               <div class="w-5/6">
-                <h3 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time Location</h3>
-                <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam mollitia.</p>
+                <h3 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Pelayanan Terintegrasi</h3>
+                <p class="text-gray-500 dark:text-gray-400">Semua jenis perizinan usaha dapat diurus dalam satu sistem.</p>
+              </div> 
+            </div> 
+            <div class="pt-4 flex gap-4 md:items-center">
+              <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">  
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7 7v15h15V7zm14 14H8V8h13zM6 6v11H2V2h15v4z"></path><path opacity=".5" d="M8 8h9v9H8z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>                                    
+              </div>
+              <div class="w-5/6">
+                <h3 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Transparansi</h3>
+                <p class="text-gray-500 dark:text-gray-400">Proses perizinan dapat dipantau secara online sehingga lebih transparan.</p>
               </div> 
             </div> 
           </div>
