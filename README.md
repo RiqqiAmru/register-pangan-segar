@@ -6,7 +6,7 @@ Register Pangan Segar Merupakan laman website yang dibuat untuk memudahkan masya
 
 ## Fitur
 
--   [] landing page
+-   [x] landing page
 -   [] daftar melalui form
 -   [] tabel nama pengusaha yang sudah mendaftar
 
