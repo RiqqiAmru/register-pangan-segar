@@ -1,0 +1,62 @@
+---
+import Container from "./Container.astro";
+
+
+
+---
+
+<div class="relative py-16">
+  <div aria-hidden="true" class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+    <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+  </div>
+  <Container>
+    <div class="relative">
+      <div class="flex items-center justify-center -space-x-2">
+        <h2 class="text-center text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Daftar Usaha yang telah menerbitkan NIB di Pekalongan Melalui Dinperpa</h2>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="daisytable daisytable-zebra daisytable-lg dark:text-white divide-y mt-3 ">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Nama Usaha</th>
+              <th>NIB</th>
+            </tr>
+          </thead>
+          <tbody id="bodyTable">
+          
+            <tr >
+              <th class="p-4">1</th>
+              <td class="p-4">Cy Ganderton</td>
+              <td class="p-4">Quality Control Specialist</td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </Container>
+</div>
+
+<script>
+  
+  document.addEventListener('DOMContentLoaded', async () => {
+const response = await fetch('https://script.google.com/macros/s/AKfycbwqFGTpo6G-NFCoQLa6I8Feu9kXwtPyvL0yHSCFQunQZnCTFSYVQ56LVIGd9K6w3gEdBg/exec');
+const data = await response.json();
+
+const bodyTable = document.getElementById('bodyTable');
+bodyTable.innerHTML = '';
+data.forEach((item, index) => {
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <th class="p-4">${index + 1}</th>
+    <td class="p-4">${item.nama}</td>
+    <td class="p-4">${item.nib}</td>
+  `;
+  bodyTable.appendChild(tr);
+});
+  })
+
+</script>

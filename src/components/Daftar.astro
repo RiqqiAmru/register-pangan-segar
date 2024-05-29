@@ -9,7 +9,7 @@ import Container from "./Container.astro";
         <h2 class="mb-6 text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Bantuan Pendaftaran OSS</h2>
         <p class="text-center text-xl text-gray-600 dark:text-gray-300">Dinperpa Kota Pekalongan menyediakan layanan bantuan untuk mendaftar ijin berusaha, isikan form berikut dan tunggu petugas Dinperpa akan menghubungi anda untuk membantu dalam proses pendaftaran OSS</p>
 
-        <div class="mt-8">
+        <div class="mt-8" id="contact">
           <h3 class="text-2xl font-bold text-gray-800 dark:text-white">Kontak</h3>
           <ul class="mt-2 text-gray-600 dark:text-gray-300 ">
             <li><span class="font-bold text-primary dark:text-white">Email</span> : <a href="mailto: dinperpa.kotapekalongan@gmail.com" class="text-primary">dinperpa.kotapekalongan@gmail.com</a></li>
@@ -36,11 +36,23 @@ import Container from "./Container.astro";
             <label for="email" class="block text-sm font-medium text-gray-600 dark:text-gray-300">Email</label>
             <input type="email" id="email" name="email" required class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200">
           </div>  
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email" class="block text-sm font-medium text-gray-600 dark:text-gray-300">No HP</label>
+            <input type="tel" id="noHP" name="noHP" required class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200">
+          </div>  
 
-          <button type="submit" class="col-span-2 block text-lg font-medium text-white bg-primary rounded-full hover:bg-primary-900 transition-none">Kirim</button>
+          <button type="submit" class="p-2 col-span-2 block text-lg font-medium text-white bg-primary rounded-full hover:bg-primary-900 transition-none">Kirim</button>
         </form>
       </div>
     </div>
   </Container>
-
 </div>
+
+<script>
+  const form = document.querySelector('form');
+  document.addEventListener('DOMContentLoaded',()=>{
+    form.action = "https://script.google.com/macros/s/AKfycbwqFGTpo6G-NFCoQLa6I8Feu9kXwtPyvL0yHSCFQunQZnCTFSYVQ56LVIGd9K6w3gEdBg/exec";
+    form.method = "POST";
+    })
+  
+</script>
