@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://riqqiamru.github.io/register-pangan-segar/sitemap.xml
