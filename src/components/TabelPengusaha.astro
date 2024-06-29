@@ -28,11 +28,27 @@ import Container from "./Container.astro";
           <tbody id="bodyTable">
           
             <tr >
-              <th class="p-4">1</th>
-              <td class="p-4">Cy Ganderton</td>
-              <td class="p-4">Quality Control Specialist</td>
+              <td class="text-center underline italic" colspan="3">Menunggu fetch data</td>
             </tr>
           
+          </tbody>
+        </table>
+      </div>
+      <div class="overflow-x-auto">
+        <h3 class="text-center text-xl font-semibold text-gray-800 dark:text-white md:text-xl">Daftar Tunggu Layanan Bantuan Pendaftaran OSS</h3>
+        <table class="daisytable daisytable-zebra daisytable-lg dark:text-white divide-y mt-3 ">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Nama Usaha</th>
+              <th>Nama Pengusaha</th>
+            </tr>
+          </thead>
+          <tbody id="daftar-tunggu">
+            <tr >
+              <td class="text-center underline italic" colspan="3">Menunggu fetch data</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -48,7 +64,7 @@ const data = await response.json();
 
 const bodyTable = document.getElementById('bodyTable');
 bodyTable.innerHTML = '';
-data.forEach((item, index) => {
+data[0].forEach((item, index) => {
   const tr = document.createElement('tr');
   tr.innerHTML = `
     <th class="p-4">${index + 1}</th>
@@ -57,6 +73,17 @@ data.forEach((item, index) => {
   `;
   bodyTable.appendChild(tr);
 });
-  })
+  
+  const daftarTunggu = document.getElementById('daftar-tunggu');
+  daftarTunggu.innerHTML = '';
+  data[1].forEach((item, index) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <th class="p-4">${index + 1}</th>
+      <td class="p-4">${item.namaUsaha}</td>
+      <td class="p-4">${item.namaPengusaha}</td>
+    `;
+    daftarTunggu.appendChild(tr);
+  });})
 
 </script>
